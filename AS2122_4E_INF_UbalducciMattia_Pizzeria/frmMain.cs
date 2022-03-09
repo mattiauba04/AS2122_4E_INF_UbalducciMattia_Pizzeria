@@ -31,5 +31,10 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
