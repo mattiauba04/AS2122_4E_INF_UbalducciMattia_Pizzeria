@@ -29,36 +29,37 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblScelta = new System.Windows.Forms.Label();
+            this.lblQuantità = new System.Windows.Forms.Label();
             this.lblTotaleVerdura = new System.Windows.Forms.Label();
             this.lblPizzeMargherita = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTotaleStagioni = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbScelta = new System.Windows.Forms.ComboBox();
             this.btnAggiungi = new System.Windows.Forms.Button();
             this.lstVisualizza = new System.Windows.Forms.ListBox();
+            this.txtQuantità = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // lblScelta
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblScelta.AutoSize = true;
+            this.lblScelta.Location = new System.Drawing.Point(62, 92);
+            this.lblScelta.Name = "lblScelta";
+            this.lblScelta.Size = new System.Drawing.Size(106, 15);
+            this.lblScelta.TabIndex = 0;
+            this.lblScelta.Text = "Che pizza desideri?";
             // 
-            // label2
+            // lblQuantità
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblQuantità.AutoSize = true;
+            this.lblQuantità.Location = new System.Drawing.Point(62, 148);
+            this.lblQuantità.Name = "lblQuantità";
+            this.lblQuantità.Size = new System.Drawing.Size(56, 15);
+            this.lblQuantità.TabIndex = 1;
+            this.lblQuantità.Text = "Quantità:";
+            this.lblQuantità.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblTotaleVerdura
             // 
@@ -105,13 +106,17 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.lblTotaleStagioni.TabIndex = 5;
             this.lblTotaleStagioni.Text = "Totale pizze 4 stagioni:";
             // 
-            // comboBox1
+            // cmbScelta
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(171, 91);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 6;
+            this.cmbScelta.FormattingEnabled = true;
+            this.cmbScelta.Items.AddRange(new object[] {
+            "margherita",
+            "vedure",
+            "4 stagioni"});
+            this.cmbScelta.Location = new System.Drawing.Point(196, 92);
+            this.cmbScelta.Name = "cmbScelta";
+            this.cmbScelta.Size = new System.Drawing.Size(121, 23);
+            this.cmbScelta.TabIndex = 6;
             // 
             // btnAggiungi
             // 
@@ -131,21 +136,29 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.lstVisualizza.Size = new System.Drawing.Size(120, 94);
             this.lstVisualizza.TabIndex = 8;
             // 
+            // txtQuantità
+            // 
+            this.txtQuantità.Location = new System.Drawing.Point(196, 145);
+            this.txtQuantità.Name = "txtQuantità";
+            this.txtQuantità.Size = new System.Drawing.Size(73, 23);
+            this.txtQuantità.TabIndex = 9;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtQuantità);
             this.Controls.Add(this.lstVisualizza);
             this.Controls.Add(this.btnAggiungi);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbScelta);
             this.Controls.Add(this.lblTotaleStagioni);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblTotaleVerdura);
             this.Controls.Add(this.lblPizzeMargherita);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblQuantità);
+            this.Controls.Add(this.lblScelta);
             this.Name = "frmMain";
             this.Text = "Ubalducci Mattia;lab2.2;4E;Gestione pizzeria";
             this.ResumeLayout(false);
@@ -155,16 +168,17 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblScelta;
+        private System.Windows.Forms.Label lblQuantità;
         private System.Windows.Forms.Label lblTotaleVerdura;
         private System.Windows.Forms.Label lblPizzeMargherita;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTotaleStagioni;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbScelta;
         private System.Windows.Forms.Button btnAggiungi;
         private System.Windows.Forms.ListBox lstVisualizza;
+        private System.Windows.Forms.TextBox txtQuantità;
     }
 }
 
