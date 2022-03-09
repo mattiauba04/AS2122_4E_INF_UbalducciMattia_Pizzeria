@@ -44,6 +44,7 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.lblTotaleQuantitàV = new System.Windows.Forms.Label();
             this.lblTotaleQuantitàQ = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblScelta
@@ -184,11 +185,21 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.listBox1.Size = new System.Drawing.Size(120, 94);
             this.listBox1.TabIndex = 13;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(74, 244);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "label1";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.lblTotaleQuantitàQ);
             this.Controls.Add(this.lblTotaleQuantitàV);
@@ -228,6 +239,7 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
         private System.Windows.Forms.Label lblTotaleQuantitàV;
         private System.Windows.Forms.Label lblTotaleQuantitàQ;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
