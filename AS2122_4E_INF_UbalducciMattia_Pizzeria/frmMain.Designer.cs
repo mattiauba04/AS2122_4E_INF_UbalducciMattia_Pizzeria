@@ -34,7 +34,7 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.lblTotaleVerdura = new System.Windows.Forms.Label();
             this.lblPizzeMargherita = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblRiepilogo = new System.Windows.Forms.Label();
             this.lblTotaleStagioni = new System.Windows.Forms.Label();
             this.cmbScelta = new System.Windows.Forms.ComboBox();
             this.btnAggiungi = new System.Windows.Forms.Button();
@@ -88,14 +88,14 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 0;
             // 
-            // label6
+            // lblRiepilogo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(535, 49);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 15);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
+            this.lblRiepilogo.AutoSize = true;
+            this.lblRiepilogo.Location = new System.Drawing.Point(536, 50);
+            this.lblRiepilogo.Name = "lblRiepilogo";
+            this.lblRiepilogo.Size = new System.Drawing.Size(60, 15);
+            this.lblRiepilogo.TabIndex = 4;
+            this.lblRiepilogo.Text = "Riepilogo:";
             // 
             // lblTotaleStagioni
             // 
@@ -153,7 +153,7 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.Controls.Add(this.btnAggiungi);
             this.Controls.Add(this.cmbScelta);
             this.Controls.Add(this.lblTotaleStagioni);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblRiepilogo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblTotaleVerdura);
             this.Controls.Add(this.lblPizzeMargherita);
@@ -173,7 +173,7 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
         private System.Windows.Forms.Label lblTotaleVerdura;
         private System.Windows.Forms.Label lblPizzeMargherita;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblRiepilogo;
         private System.Windows.Forms.Label lblTotaleStagioni;
         private System.Windows.Forms.ComboBox cmbScelta;
         private System.Windows.Forms.Button btnAggiungi;
