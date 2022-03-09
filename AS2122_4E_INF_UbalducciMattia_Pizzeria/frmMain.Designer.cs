@@ -43,6 +43,7 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.lblTotaleQuantitàM = new System.Windows.Forms.Label();
             this.lblTotaleQuantitàV = new System.Windows.Forms.Label();
             this.lblTotaleQuantitàQ = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lblScelta
@@ -123,7 +124,7 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             // 
             // btnAggiungi
             // 
-            this.btnAggiungi.Location = new System.Drawing.Point(337, 80);
+            this.btnAggiungi.Location = new System.Drawing.Point(337, 83);
             this.btnAggiungi.Name = "btnAggiungi";
             this.btnAggiungi.Size = new System.Drawing.Size(116, 39);
             this.btnAggiungi.TabIndex = 7;
@@ -174,11 +175,21 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
             this.lblTotaleQuantitàQ.TabIndex = 12;
             this.lblTotaleQuantitàQ.Text = ".";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(226, 277);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 94);
+            this.listBox1.TabIndex = 13;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.lblTotaleQuantitàQ);
             this.Controls.Add(this.lblTotaleQuantitàV);
             this.Controls.Add(this.lblTotaleQuantitàM);
@@ -216,6 +227,7 @@ namespace AS2122_4E_INF_UbalducciMattia_Pizzeria
         private System.Windows.Forms.Label lblTotaleQuantitàM;
         private System.Windows.Forms.Label lblTotaleQuantitàV;
         private System.Windows.Forms.Label lblTotaleQuantitàQ;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
